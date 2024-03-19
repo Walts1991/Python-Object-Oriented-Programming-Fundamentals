@@ -2,7 +2,7 @@
 #Declare a basic class construction using built in Python function "class [Name]:"
     #Class Data Attributes
     #Object Data Attributes
-    #Methods  
+    #Methods
 
 class Person: #Base class for person using AI generated detail below
     def __init__(self, first_name, last_name):  #This is the

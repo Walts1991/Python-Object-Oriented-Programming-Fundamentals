@@ -1,0 +1,27 @@
+class BankAccount():
+    def __init__(self,FirstName,LastName,AccountNumber,Balance):
+        self.__first_name = FirstName
+        self.__last_name = LastName
+        self.__account_number = AccountNumber
+        self.__balance = Balance
+
+    def show_account_details(self):
+        print('First Name:', self.__first_name)
+        print('Last Name:', self.__last_name)
+        print('Account Number:', self.__account_number)
+        print('Balance: £', self.__balance, sep='') #Added sep following review of explanation
+        print()
+
+def main():
+    #Create new accounts
+    account01 = BankAccount('Victor','Davis','5632',300)
+    account02 = BankAccount('Jason','Wilson','7852',600)
+    account03 = BankAccount('Scott','James','4112',200)
+
+    #Display account details
+    account01.show_account_details()
+    account02.show_account_details()
+    account03.show_account_details()
+
+#Start the program
+main()

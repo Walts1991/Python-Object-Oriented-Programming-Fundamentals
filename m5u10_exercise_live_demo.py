@@ -23,41 +23,34 @@ class Savings_Account(BankAccount):
         BankAccount.__init__(self, initial_balance)
         
 def main():
+    #Create savings account object
+    savings_account = Savings_Account(100)
     #Create checking account object
-    checking_account = Checking_Account(300)
+    checking_account = Checking_Account(500)
     
     #Display initial balance of the checking account
-    print('Initial checking account balance: £', checking_account.get_balance())
+    print('Savings account balance: $', savings_account.get_balance())    
+    
+    #Display initial balance of the checking account
+    print('Checking account balance: $', checking_account.get_balance())
+    print()
     
     #Deposit into checking account
-    checking_account.deposit(300)
+    checking_account.deposit(75)
+    print('Making deposit into checking account for $75...')
+    print()
     
     #Display new balance of account after deposit
-    print('New balance with deposit: £', checking_account.get_balance())    
-    
-    #Withdraw from checking account
-    checking_account.withdraw(200)
-    
-    #Display final balance of account after withdrawal
-    print('Final balance after withdrawal: £', checking_account.get_balance())   
-    
-    #Create savings_account object
-    savings_account = Savings_Account(200)
-    
-    #Display current balance of the account
-    print('Savings account balance: £', savings_account.get_balance())
+    print('New checking account balance: $', checking_account.get_balance())   
+    print() 
     
     #Deposit into savings_account
     savings_account.deposit(300)
+    print('Making deposit into savings account for $300...')
+    print()
     
     #Display new balance of account after deposit
-    print('New balance: £', savings_account.get_balance())    
-    
-    #Withdraw from savings_account
-    savings_account.withdraw(450)
-    
-    #Display final balance of account after withdrawal
-    print('Final balance: £', savings_account.get_balance())        
+    print('New savings account balance: $', savings_account.get_balance())
     
 #Start program
 main()
